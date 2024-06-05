@@ -23,6 +23,9 @@ public class MainProg extends Application{
 		viewVilles.setAutomaticLayout(true);
 		viewVilles.init();
 	}
+
+
+
 /**
  * La méthode principale.
  * @param args Aucun.
