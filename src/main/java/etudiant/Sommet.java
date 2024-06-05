@@ -77,10 +77,12 @@ public class Sommet {
 	 * @param sommet Un sommet non null.
 	 * @return La liste des sommets voisins.
 	 */
-	static public ArrayList<Sommet> getSommetsVoisins(ArrayList<Sommet> sommets,Sommet sommet) {
-		ArrayList<Ville> villesVoisines=sommet.ville.getVillesVoisines();
-		ArrayList<Sommet> sommetsVoisins=new ArrayList<Sommet>();
-		// A modifier
+	public static ArrayList<Sommet> getSommetsVoisins(ArrayList<Sommet> sommets,Sommet sommet) {
+		ArrayList<Ville> villesVoisines = sommet.ville.getVillesVoisines();
+		ArrayList<Sommet> sommetsVoisins = new ArrayList<>();
+		for (Ville v : villesVoisines) {
+			sommetsVoisins.add(getSommet(sommets, v));
+		}
 		return sommetsVoisins;
 	}
 
