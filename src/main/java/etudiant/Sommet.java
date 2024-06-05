@@ -47,8 +47,12 @@ public class Sommet {
 	 * @param ville Une ville non null.
 	 * @return Le sommet associée avec la ville ou null.
 	 */
-	static public Sommet getSommet(ArrayList<Sommet> sommets,Ville ville) {
-		// A modifier
+	public static Sommet getSommet(ArrayList<Sommet> sommets,Ville ville) {
+		for (Sommet s : sommets) {
+			if (s.getVille().getCodeInsee().equals(ville.getCodeInsee())) {
+				return s;
+			}
+		}
 		return null;
 	}
 
