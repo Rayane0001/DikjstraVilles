@@ -7,3 +7,12 @@ i
 9src/main/java/jfc/sae/dikjstravilles/HelloController.java,b\a\ba2c3d5dc94793a0be442ddc90262c68416255a2
 j
 :src/main/java/jfc/sae/dikjstravilles/HelloApplication.java,8\a\8a7d8b2a4a5ace01217fcbf4ac6627adfac1fd79
+N
+src/main/java/module-info.java,1\c\1c89a5491fbfda3fb050196d6a239f20200296e7
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
