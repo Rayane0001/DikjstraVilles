@@ -2,9 +2,6 @@ module jfc.sae.dikjstravilles {
     requires javafx.controls;
     requires javafx.fxml;
     requires smartgraph;
+    requires villesJFC;
     exports etudiant;
-
-
-    opens jfc.sae.dikjstravilles to javafx.fxml;
-    exports jfc.sae.dikjstravilles;
 }

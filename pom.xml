@@ -16,6 +16,13 @@
 
     <dependencies>
         <dependency>
+            <groupId>villesJFC</groupId>
+            <artifactId>villesJFC</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/villesJFC.jar</systemPath>
+        </dependency>
+        <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>17.0.6</version>
