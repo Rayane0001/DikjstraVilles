@@ -61,9 +61,13 @@ public class Sommet {
 	 * @param sommets Une liste de sommets supposée non null et non vide.
 	 * @return Un sommet avec un coût minimal.
 	 */
-	static public Sommet getSommetCoutMin(ArrayList<Sommet> sommets) {
+	public static Sommet getSommetCoutMin(ArrayList<Sommet> sommets) {
 		Sommet sommetMin=sommets.get(0);
-		// A modifier
+		for (Sommet s : sommets) {
+			if (s.getCout() < sommetMin.getCout()) {
+				sommetMin = s;
+			}
+		}
 		return sommetMin;
 	}
 
