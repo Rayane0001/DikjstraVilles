@@ -121,7 +121,7 @@ public class Sommet {
 	 * @param sommet Le nouveau prédécesseur du sommet.
 	 */
 	public void setPredecesseur(Sommet sommet) {
-		this.predecesseur = predecesseur;
+		this.predecesseur = sommet;
 	}
 
 }
