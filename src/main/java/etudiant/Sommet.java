@@ -89,7 +89,7 @@ public class Sommet {
 	 * @param cout Le nouveau coût du sommet.
 	 */
 	public void setCout(int cout) {
-		// A modifier
+		this.cout = cout;
 	}
 
 	/**
@@ -121,7 +121,7 @@ public class Sommet {
 	 * @param sommet Le nouveau prédécesseur du sommet.
 	 */
 	public void setPredecesseur(Sommet sommet) {
-		// A modifier
+		this.predecesseur = predecesseur;
 	}
 
 }
