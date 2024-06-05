@@ -1,0 +1,51 @@
+class Ville {
+    - codeInsee : String
+    - nom : String
+    - longitude : double
+    - latitude : double
+    - villesVoisines : ArrayList<Ville>
+    + Ville(codeInsee : String, nom : String, longitude : double, latitude : double)
+    + getVilles() : ArrayList<Ville>
+    + getVilleFromCodeInsee(codeInsee : String) : Ville
+    + getVilleFromNom(nom : String) : Ville
+    + infos() : String
+    + getCodeInsee() : String
+    + getNom() : String
+    + getDistanceMetres(ville : Ville) : Integer
+    + getVillesVoisines() : ArrayList<Ville>
+}
+
+class Sommet {
+    - ville : Ville
+    - cout : int
+    - predecesseur : Sommet
+    + Sommet(ville : Ville)
+    + getSommet(sommets : ArrayList<Sommet>, ville : Ville) : Sommet
+    + getSommetCoutMin(sommets : ArrayList<Sommet>) : Sommet
+    + getSommetsVoisins(sommets : ArrayList<Sommet>, sommet : Sommet) : ArrayList<Sommet>
+    + setCout(cout : int) : void
+    + getVille() : Ville
+    + getPredecesseur() : Sommet
+    + getCout() : int
+    + setPredecesseur(sommet : Sommet) : void
+}
+
+class MainProg {
+    + start(ignored : Stage) : void
+    + main(args : String[]) : void
+}
+
+interface ICalculateurPlusCourtChemin {
+    + plusCourtChemin(toutesLesVilles : ArrayList<Ville>, villeDepart : Ville, villeArrivee : Ville) : ArrayList<Ville>
+}
+
+class CalculateurPlusCourtChemin {
+    + plusCourtChemin(toutesLesVilles : ArrayList<Ville>, villeDepart : Ville, villeArrivee : Ville) : ArrayList<Ville>
+}
+
+Ville "1" -- "*" Ville : villesVoisines
+Sommet "1" -- "1" Ville : ville
+Sommet "1" -- "1" Sommet : predecesseur
+MainProg --> CalculateurPlusCourtChemin
+CalculateurPlusCourtChemin ..|> ICalculateurPlusCourtChemin
+CalculateurPlusCourtChemin --> Ville
